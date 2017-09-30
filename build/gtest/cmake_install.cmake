@@ -2,11 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-<<<<<<< HEAD
   set(CMAKE_INSTALL_PREFIX "/home/gong/桌面/myrobot/myrobot/install")
-=======
-  set(CMAKE_INSTALL_PREFIX "/home/gong/myrobot/install")
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

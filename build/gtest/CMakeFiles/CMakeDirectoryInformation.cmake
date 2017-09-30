@@ -3,11 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/gtest")
-<<<<<<< HEAD
 set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/gong/桌面/myrobot/myrobot/build")
-=======
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/gong/myrobot/build")
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

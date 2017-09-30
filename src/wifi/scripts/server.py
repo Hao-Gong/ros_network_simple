@@ -1,9 +1,11 @@
 #!/usr/bin/python
+#-*-coding:utf-8-*- 
 
 import socket
 import rospy
 import time
 from myrobot_msgs.msg import led
+
 
 def main():
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)

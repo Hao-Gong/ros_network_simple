@@ -43,24 +43,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
-=======
-CMAKE_SOURCE_DIR = /home/gong/myrobot/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/myrobot/build
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for myrobot_msgs_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/progress.make
 
-<<<<<<< HEAD
 myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs: /home/gong/桌面/myrobot/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js
 
 
@@ -71,18 +63,6 @@ myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs: /home/gong/桌面
 
 myrobot_msgs_generate_messages_nodejs: myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs
 myrobot_msgs_generate_messages_nodejs: /home/gong/桌面/myrobot/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js
-=======
-myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs: /home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js
-
-
-/home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js: /home/gong/myrobot/src/myrobot_msgs/msg/led.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gong/myrobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from myrobot_msgs/led.msg"
-	cd /home/gong/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gong/myrobot/src/myrobot_msgs/msg/led.msg -Imyrobot_msgs:/home/gong/myrobot/src/myrobot_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p myrobot_msgs -o /home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg
-
-myrobot_msgs_generate_messages_nodejs: myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs
-myrobot_msgs_generate_messages_nodejs: /home/gong/myrobot/devel/share/gennodejs/ros/myrobot_msgs/msg/led.js
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 myrobot_msgs_generate_messages_nodejs: myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : myrobot_msgs_generate_messages_nodejs
@@ -93,18 +73,10 @@ myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/build: myrobot
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/build
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/clean:
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/clean
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/depend:
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
-=======
-	cd /home/gong/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
-.PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/clean
-
-myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/myrobot_msgs /home/gong/myrobot/build /home/gong/myrobot/build/myrobot_msgs /home/gong/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_generate_messages_nodejs.dir/depend
 

@@ -48,17 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
-=======
-CMAKE_SOURCE_DIR = /home/gong/myrobot/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/myrobot/build
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,24 +135,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gong/桌面/myrobot/myrobot/build/CMakeFiles /home/gong/桌面/myrobot/myrobot/build/wifi/CMakeFiles/progress.marks
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gong/桌面/myrobot/myrobot/build/CMakeFiles 0
-=======
-	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gong/myrobot/build/CMakeFiles /home/gong/myrobot/build/wifi/CMakeFiles/progress.marks
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gong/myrobot/build/CMakeFiles 0
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : all
 
 # The main clean target
 clean:
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/clean
-=======
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/clean
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : clean
 
 # The main clean target
@@ -169,29 +152,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/preinstall
-=======
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/preinstall
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/preinstall
-=======
-	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 wifi/preinstall
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-=======
-	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : depend
 
 # Help Target
@@ -218,10 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-=======
-	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
->>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : cmake_check_build_system
 
