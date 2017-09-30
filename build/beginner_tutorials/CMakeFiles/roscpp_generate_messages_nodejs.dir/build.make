@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -63,10 +70,18 @@ beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build: roscpp_
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/beginner_tutorials /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gong/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
+.PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+
+beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/beginner_tutorials /home/gong/myrobot/build /home/gong/myrobot/build/beginner_tutorials /home/gong/myrobot/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 

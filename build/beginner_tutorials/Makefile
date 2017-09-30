@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +142,24 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gong/桌面/myrobot/myrobot/build/CMakeFiles /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/CMakeFiles/progress.marks
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gong/桌面/myrobot/myrobot/build/CMakeFiles 0
+=======
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gong/myrobot/build/CMakeFiles /home/gong/myrobot/build/beginner_tutorials/CMakeFiles/progress.marks
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gong/myrobot/build/CMakeFiles 0
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/clean
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/clean
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +169,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/preinstall
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/preinstall
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/preinstall
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/preinstall
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : depend
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -177,12 +210,20 @@ roscpp_generate_messages_nodejs: beginner_tutorials/CMakeFiles/roscpp_generate_m
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -192,12 +233,20 @@ roscpp_generate_messages_lisp: beginner_tutorials/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -207,12 +256,20 @@ roscpp_generate_messages_eus: beginner_tutorials/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_eus.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -222,12 +279,20 @@ roscpp_generate_messages_cpp: beginner_tutorials/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -237,12 +302,20 @@ rosgraph_msgs_generate_messages_nodejs: beginner_tutorials/CMakeFiles/rosgraph_m
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -252,12 +325,20 @@ roscpp_generate_messages_py: beginner_tutorials/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -267,12 +348,20 @@ rosgraph_msgs_generate_messages_py: beginner_tutorials/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -282,12 +371,20 @@ rosgraph_msgs_generate_messages_cpp: beginner_tutorials/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -297,12 +394,20 @@ rosgraph_msgs_generate_messages_eus: beginner_tutorials/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -312,7 +417,11 @@ rosgraph_msgs_generate_messages_lisp: beginner_tutorials/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+=======
+	cd /home/gong/myrobot/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Help Target
@@ -349,6 +458,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : cmake_check_build_system
 

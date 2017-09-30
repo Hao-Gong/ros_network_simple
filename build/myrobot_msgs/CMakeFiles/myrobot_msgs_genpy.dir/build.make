@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for myrobot_msgs_genpy.
 
@@ -63,10 +70,18 @@ myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/build: myrobot_msgs_genpy
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/build
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/clean:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_genpy.dir/cmake_clean.cmake
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/clean
 
 myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/depend:
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gong/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/myrobot_msgs_genpy.dir/cmake_clean.cmake
+.PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/clean
+
+myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/depend:
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/myrobot_msgs /home/gong/myrobot/build /home/gong/myrobot/build/myrobot_msgs /home/gong/myrobot/build/myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : myrobot_msgs/CMakeFiles/myrobot_msgs_genpy.dir/depend
 

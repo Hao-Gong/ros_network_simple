@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +70,18 @@ beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: rosg
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/beginner_tutorials /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials /home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gong/myrobot/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/beginner_tutorials /home/gong/myrobot/build /home/gong/myrobot/build/beginner_tutorials /home/gong/myrobot/build/beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

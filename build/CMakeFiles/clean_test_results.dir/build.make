@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +61,11 @@ CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
+<<<<<<< HEAD
 	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/gong/桌面/myrobot/myrobot/build/test_results
+=======
+	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/gong/myrobot/build/test_results
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +82,10 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src /home/gong/myrobot/build /home/gong/myrobot/build /home/gong/myrobot/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

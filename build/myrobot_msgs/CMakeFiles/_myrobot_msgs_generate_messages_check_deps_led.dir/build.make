@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+=======
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 # Utility rule file for _myrobot_msgs_generate_messages_check_deps_led.
 
@@ -54,7 +61,11 @@ CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
 include myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/progress.make
 
 myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py myrobot_msgs /home/gong/桌面/myrobot/myrobot/src/myrobot_msgs/msg/led.msg 
+=======
+	cd /home/gong/myrobot/build/myrobot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py myrobot_msgs /home/gong/myrobot/src/myrobot_msgs/msg/led.msg 
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 
 _myrobot_msgs_generate_messages_check_deps_led: myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led
 _myrobot_msgs_generate_messages_check_deps_led: myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/build.make
@@ -67,10 +78,18 @@ myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/build
 .PHONY : myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/build
 
 myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/clean:
+<<<<<<< HEAD
 	cd /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/cmake_clean.cmake
 .PHONY : myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/clean
 
 myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/depend:
 	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs /home/gong/桌面/myrobot/myrobot/build/myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gong/myrobot/build/myrobot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/cmake_clean.cmake
+.PHONY : myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/clean
+
+myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/depend:
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/myrobot_msgs /home/gong/myrobot/build /home/gong/myrobot/build/myrobot_msgs /home/gong/myrobot/build/myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 .PHONY : myrobot_msgs/CMakeFiles/_myrobot_msgs_generate_messages_check_deps_led.dir/depend
 

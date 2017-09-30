@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: /home/gong/桌面/myrobot/myrobot/src/beginner_tutorials
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/gong/桌面/myrobot/myrobot/install")
+=======
+# Install script for directory: /home/gong/myrobot/src/beginner_tutorials
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/home/gong/myrobot/install")
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +41,30 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorials.pc")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorials.pc")
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials/cmake" TYPE FILE FILES
+<<<<<<< HEAD
     "/home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorialsConfig.cmake"
     "/home/gong/桌面/myrobot/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorialsConfig-version.cmake"
+=======
+    "/home/gong/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorialsConfig.cmake"
+    "/home/gong/myrobot/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorialsConfig-version.cmake"
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials" TYPE FILE FILES "/home/gong/桌面/myrobot/myrobot/src/beginner_tutorials/package.xml")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials" TYPE FILE FILES "/home/gong/myrobot/src/beginner_tutorials/package.xml")
+>>>>>>> 4fc345b9def90f76e832b4afc4b39ddc28cb948b
 endif()
 
