@@ -317,14 +317,6 @@ message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
 //Value Computed by CMake
-myrobot_msg_BINARY_DIR:STATIC=/home/gong/桌面/myrobot/build/myrobot_msgs
-
-myrobot_msg_DIR:PATH=
-
-//Value Computed by CMake
-myrobot_msg_SOURCE_DIR:STATIC=/home/gong/桌面/myrobot/src/myrobot_msgs
-
-//Value Computed by CMake
 myrobot_msgs_BINARY_DIR:STATIC=/home/gong/桌面/myrobot/myrobot/build/myrobot_msgs
 
 //The directory containing a CMake configuration file for myrobot_msgs.
@@ -379,7 +371,7 @@ xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/gong/桌面/myrobot/myrobot/build/catkin_generated/env_cached.sh
-CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/gong/桌面/myrobot/build/test_results
+CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/gong/桌面/myrobot/myrobot/build/test_results
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -454,7 +446,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/gong/桌面/myrobot/src
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/gong/桌面/myrobot/myrobot/src
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -474,7 +466,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
