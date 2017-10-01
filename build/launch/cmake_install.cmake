@@ -1,8 +1,8 @@
-# Install script for directory: /home/gong/桌面/myrobot/myrobot/src/launch
+# Install script for directory: /home/gong/myrobot/src/launch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gong/桌面/myrobot/myrobot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/gong/myrobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/桌面/myrobot/myrobot/build/launch/catkin_generated/installspace/launch.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gong/myrobot/build/launch/catkin_generated/installspace/launch.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launch/cmake" TYPE FILE FILES
-    "/home/gong/桌面/myrobot/myrobot/build/launch/catkin_generated/installspace/launchConfig.cmake"
-    "/home/gong/桌面/myrobot/myrobot/build/launch/catkin_generated/installspace/launchConfig-version.cmake"
+    "/home/gong/myrobot/build/launch/catkin_generated/installspace/launchConfig.cmake"
+    "/home/gong/myrobot/build/launch/catkin_generated/installspace/launchConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launch" TYPE FILE FILES "/home/gong/桌面/myrobot/myrobot/src/launch/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launch" TYPE FILE FILES "/home/gong/myrobot/src/launch/package.xml")
 endif()
 

@@ -1,5 +1,5 @@
 <launch>
-    <node pkg="led" type="led.py" name="led">
+    <node pkg="wifi" type="server.py" name="server">
     </node>	
 </launch>
 

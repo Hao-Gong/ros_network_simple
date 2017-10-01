@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: rosgraph_msgs_g
 .PHONY : launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/gong/桌面/myrobot/myrobot/build/launch && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/gong/myrobot/build/launch && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/launch /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/launch /home/gong/桌面/myrobot/myrobot/build/launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/launch /home/gong/myrobot/build /home/gong/myrobot/build/launch /home/gong/myrobot/build/launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : launch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 

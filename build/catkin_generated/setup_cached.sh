@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/gong/桌面/myrobot/myrobot/build"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig"
+export PWD="/home/gong/myrobot/build"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gong/桌面/myrobot/myrobot/src
+CMAKE_SOURCE_DIR = /home/gong/myrobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gong/桌面/myrobot/myrobot/build
+CMAKE_BINARY_DIR = /home/gong/myrobot/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ test/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_exported_
 .PHONY : test/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 test/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/gong/桌面/myrobot/myrobot/build/test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/gong/myrobot/build/test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 test/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/gong/桌面/myrobot/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/桌面/myrobot/myrobot/src /home/gong/桌面/myrobot/myrobot/src/test /home/gong/桌面/myrobot/myrobot/build /home/gong/桌面/myrobot/myrobot/build/test /home/gong/桌面/myrobot/myrobot/build/test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gong/myrobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gong/myrobot/src /home/gong/myrobot/src/test /home/gong/myrobot/build /home/gong/myrobot/build/test /home/gong/myrobot/build/test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/_catkin_empty_exported_target.dir/depend
 
