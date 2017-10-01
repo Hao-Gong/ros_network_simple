@@ -1,0 +1,2 @@
+launch:led:myrobot_msgs:test:wifi
+-DCATKIN_DEVEL_PREFIX=/home/gong/myrobot/devel -DCMAKE_INSTALL_PREFIX=/home/gong/myrobot/install -G Unix Makefiles

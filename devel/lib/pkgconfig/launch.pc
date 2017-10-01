@@ -1,0 +1,8 @@
+prefix=/home/gong/myrobot/devel
+
+Name: launch
+Description: Description of launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gong/myrobot/devel/lib 
+Requires: 
