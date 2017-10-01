@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="wifi" type="server.py" name="server">
+    </node>	
+</launch>
+
