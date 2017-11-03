@@ -1,0 +1,8 @@
+prefix=/home/gong/network/install
+
+Name: pc
+Description: Description of pc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gong/network/install/lib 
+Requires: 

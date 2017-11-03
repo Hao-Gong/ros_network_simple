@@ -1,0 +1,2 @@
+control:launch:myrobot_msgs:pc:robot:rviz
+-DCATKIN_DEVEL_PREFIX=/home/gong/network/devel -DCMAKE_INSTALL_PREFIX=/home/gong/network/install -G Unix Makefiles

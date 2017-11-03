@@ -1,0 +1,8 @@
+prefix=/home/gong/network/devel
+
+Name: rviz
+Description: Description of rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gong/network/devel/lib 
+Requires: 

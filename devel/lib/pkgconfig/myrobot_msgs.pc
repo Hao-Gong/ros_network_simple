@@ -1,0 +1,8 @@
+prefix=/home/gong/network/devel
+
+Name: myrobot_msgs
+Description: Description of myrobot_msgs
+Version: 0.0.0
+Cflags: -I/home/gong/network/devel/include
+Libs: -L/home/gong/network/devel/lib 
+Requires: message_runtime
