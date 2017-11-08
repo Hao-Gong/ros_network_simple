@@ -33,7 +33,7 @@ def callback(data):
 		s = ser.read(bytesToSend)
 		print(s)
 		ser.close()
-	
+
 	except:
 		print("cannot open the serial")
 

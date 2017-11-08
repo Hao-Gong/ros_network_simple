@@ -111,7 +111,11 @@ catkin_package(
 #  DEPENDS system_lib
 )
 add_executable(model src/model.cpp)
+add_executable(test src/test.cpp)
+
 target_link_libraries(model ${catkin_LIBRARIES})
+target_link_libraries(test ${catkin_LIBRARIES})
+##target_link_libraries(test ${catkin_LIBRARIES})
 ###########
 ## Build ##
 ###########

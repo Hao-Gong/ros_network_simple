@@ -82,8 +82,8 @@
 /home/gong/network/build/robot/CMakeFiles/test.dir
 /home/gong/network/build/robot/CMakeFiles/edit_cache.dir
 /home/gong/network/build/rviz/CMakeFiles/install.dir
-/home/gong/network/build/rviz/CMakeFiles/test.dir
 /home/gong/network/build/rviz/CMakeFiles/install/local.dir
+/home/gong/network/build/rviz/CMakeFiles/test.dir
 /home/gong/network/build/rviz/CMakeFiles/edit_cache.dir
 /home/gong/network/build/rviz/CMakeFiles/model.dir
 /home/gong/network/build/rviz/CMakeFiles/list_install_components.dir
