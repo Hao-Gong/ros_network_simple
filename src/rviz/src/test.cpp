@@ -2,79 +2,27 @@
 #include <visualization_msgs/Marker.h>
 #include "std_msgs/String.h"
 
-struct model_position{
-    float x;
-    float y;
-    float z;
-};
+int model(ros::Publisher marker_pub);
 
-struct model_param{
-    model_position position;
-};
-
-class robot_model
+void ControlCallback(const std_msgs::String::ConstPtr& msg)
 {
-    public:
-        robot_model();
-        model_param m_param;
-        int model(ros::Publisher marker_pub);
-};
-
-void ControlCallback(const std_msgs::String::ConstPtr& msg);
-
-robot_model rm;
+  ROS_INFO("I heard: [%s]", msg->data.c_str());
+}
 
 int main( int argc, char** argv )
 {
   ros::init(argc, argv, "Model");
   ros::NodeHandle n;
-  ros::Rate r(100);
-  ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
-  ros::Subscriber sub = n.subscribe("/controler", 1000, ControlCallback);
+  ros::Rate r(1);
+  //ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
 
-  while (ros::ok())
-  {
-    rm.model(marker_pub);
-    ros::spinOnce();
-    r.sleep();
-  }
+  ros::Subscriber sub = n.subscribe("/controler", 1000, ControlCallback);
+  ros::spin();
+
   return 0;
 }
 
-
-//class function definition
-robot_model::robot_model(){
-    m_param.position.x=0;
-    m_param.position.y=0;
-    m_param.position.z=0;
-}
-
-
-void ControlCallback(const std_msgs::String::ConstPtr& msg)
-{
-  ROS_INFO("I heard: [%s]", msg->data.c_str());
-
-  std::string accept_str = msg->data;
-  if(accept_str=="forwards"){
-        rm.m_param.position.y++;
-        ROS_INFO("forwards");
-   }else if(accept_str=="backwards"){
-        rm.m_param.position.y--;
-        ROS_INFO("backwards");
-   }else if(accept_str=="right"){
-        rm.m_param.position.x++;
-        ROS_INFO("right");
-   }else if(accept_str=="left"){
-        rm.m_param.position.x--;
-        ROS_INFO("left");
-   }else if(accept_str=="origin"){
-        rm.m_param.position.x=0;
-        rm.m_param.position.y=0;
-        rm.m_param.position.z=0;
-        ROS_INFO("set origin");}
-}
-
-int robot_model::model(ros::Publisher marker_pub)
+int model(ros::Publisher marker_pub)
 {
     visualization_msgs::Marker marker;
     // Set the frame ID and timestamp.  See the TF tutorials for information on these.
@@ -93,9 +41,9 @@ int robot_model::model(ros::Publisher marker_pub)
     marker.action = visualization_msgs::Marker::ADD;
 
     // Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
-    marker.pose.position.x = m_param.position.x;
-    marker.pose.position.y = m_param.position.y;
-    marker.pose.position.z = m_param.position.z;
+    marker.pose.position.x = 0;
+    marker.pose.position.y = 0;
+    marker.pose.position.z = 0;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
     marker.pose.orientation.z = 0.0;
@@ -114,5 +62,15 @@ int robot_model::model(ros::Publisher marker_pub)
 
     marker.lifetime = ros::Duration();
 
+    // Publish the marker
+    while (marker_pub.getNumSubscribers() < 1)
+    {
+      if (!ros::ok())
+      {
+        return 0;
+      }
+      ROS_WARN_ONCE("Please create a subscriber to the marker");
+      sleep(1);
+    }
     marker_pub.publish(marker);
 }

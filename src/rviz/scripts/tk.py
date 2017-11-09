@@ -11,42 +11,96 @@ rospy.init_node('model_controler', anonymous=0)
 pub = rospy.Publisher('/controler', String, queue_size=10)
 rate = rospy.Rate(100)  # 10hz
 
-def ui_process():
-    root = Tk()
-    root.geometry("300x400+500+300")
-    L_titile = Label(root,text='Rviz_3D_model_controler',)
-    L_titile.config(font='Helvetica -15 bold',fg='blue')
-    L_titile.place(x=150,y=20,anchor="center")
-    L_author = Label(root, text='Hao')
-    L_author.config(font='Helvetica -10 bold')
-    L_author.place(x=250,y=380)
-    #botton
-    B_left = Button(root, text="   left   ", command=left_press)
-    B_left.place(x=90,y=200)
-    B_right= Button(root, text="   right   ", command=right_press)
-    B_right.place(x=180,y=200)
-    B_forwards = Button(root, text=" forwards ", command=forwards_press)
-    B_forwards.place(x=120,y=150)
-    B_backwards = Button(root, text=" backwards ", command=backwards_press)
-    B_backwards.place(x=120,y=250)
+class ui_process(Frame):
+    def __init__(self, master):
 
-    mainloop()
+        master.geometry("400x150+600+300")
+        master.resizable(width=False, height=False)
 
+        fm0 = Frame(master)
+        Label(fm0,text='Rviz_3D_model_controler by gong').pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        fm0.pack(side=TOP, fill=BOTH, expand=YES)
 
-def left_press():
-    pub.publish("left")
+        #frame
+        fm1=Frame(master)
+        #botton
+        Button(fm1, text="for+left", command=self.forwards_left_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm1, text="forwards(key:w)", command=self.forwards_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm1, text="for+right", command=self.forwards_right_press).pack(side=LEFT, anchor=W, fill=X, expand=YES)
+        fm1.pack(side=TOP, fill=BOTH, expand=YES)
 
-def right_press():
-    pub.publish("right")
+        fm2 = Frame(master)
+        Button(fm2, text="left(key:a)", command=self.left_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm2, text="      origin      ", command=self.origin).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm2, text="right(key:d)", command=self.right_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        fm2.pack(side=TOP, fill=BOTH, expand=YES)
 
-def forwards_press():
-    pub.publish("forwards")
+        fm3 = Frame(master)
+        Button(fm3, text="back+left", command=self.backwards_left_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm3, text="backwards(key:s)", command=self.backwards_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        Button(fm3, text="back+right", command=self.backwards_right_press).pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        fm3.pack(side=TOP, fill=BOTH, expand=YES)
 
-def backwards_press():
-    pub.publish("backwards")
+        fm4= Frame(master)
+        #keyboard listening
+        Label(fm4, text='Input from keyboard:').pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        self.keyboard_listening=Entry(fm4)
+        self.keyboard_listening.pack(side=LEFT,anchor=W, fill=X, expand=YES)
+        self.keyboard_listening.bind('<Key>',self.key_detect)
+        Button(fm4, text=" clear", command=self.keyboard_clear).pack(side=LEFT, anchor=W, fill=X, expand=YES)
+        fm4.pack(side=TOP, fill=BOTH, expand=YES)
+        master.mainloop()
+
+    def forwards_left_press(self):
+        pub.publish("left")
+        pub.publish("forwards")
+
+    def forwards_right_press(self):
+        pub.publish("right")
+        pub.publish("forwards")
+
+    def backwards_left_press(self):
+        pub.publish("left")
+        pub.publish("backwards")
+
+    def backwards_right_press(self):
+        pub.publish("right")
+        pub.publish("backwards")
+
+    def origin(self):
+        pub.publish("origin")
+
+    def left_press(self):
+        pub.publish("left")
+
+    def right_press(self):
+        pub.publish("right")
+
+    def forwards_press(self):
+        pub.publish("forwards")
+
+    def backwards_press(self):
+        pub.publish("backwards")
+
+    def key_detect(self,Event):
+        #print("key:"+Event.char)
+        if Event.char=="w":
+            pub.publish("forwards")
+        elif Event.char=="s":
+            pub.publish("backwards")
+        elif Event.char == "a":
+            pub.publish("left")
+        elif Event.char == "d":
+            pub.publish("right")
+
+    def keyboard_clear(self):
+        self.keyboard_listening.delete('0', END)
+
 
 def main():
-    ui_process()
+    root = Tk()
+    ui=ui_process(master=root)
+    #ui.mainloop()
 
 if __name__ == '__main__':
 	try:

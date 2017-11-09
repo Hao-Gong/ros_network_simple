@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="rviz" type="tk.py" name="tk"/>
+    <node pkg="rviz" type="model" name="model"/>
+</launch>
+
